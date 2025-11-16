@@ -152,9 +152,9 @@ Complete the exercise in the space below:
 */
 function convertTemperature(temperature, scale) {
   if (scale === 'C') {
-    return (temperature * 9/5) + 32;
+    return (temperature * 1.8) + 32;
   } else if (scale === 'F') {
-    return (temperature - 32) * 5/9;
+    return (temperature - 32) * 0.5556;
   } else {
     throw new Error("Invalid scale. Use 'C' for Celsius or 'F' for Fahrenheit.");
   }
@@ -285,4 +285,5 @@ function numArgs() {
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
 console.log('Exercise 12 Result:', numArgs(23, 35, 42, 59, 452));
 console.log('Exercise 12 Result:', numArgs(111, 294, 743, 534, 666, 346));
+
 
